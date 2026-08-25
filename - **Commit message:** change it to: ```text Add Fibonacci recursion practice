@@ -1,0 +1,258 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyNCRWhN2HmQWWjUmc4zxfOh",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/MyrakonLab/Data-Structure-in-Python/blob/main/-%20**Commit%20message%3A**%20change%20it%20to%3A%20%60%60%60text%20Add%20Fibonacci%20recursion%20practice\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def sum_to_n(n):\n",
+        "    if n == 1:\n",
+        "        return 1\n",
+        "    else:\n",
+        "        return n + sum_to_n(n - 1)\n",
+        "\n",
+        "\n",
+        "\n",
+        "sum_to_n(8)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "lZui1vni3sFo",
+        "outputId": "4f449ef3-8bda-47bb-de58-c549fbd38cd4"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "36"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 5
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def Countdown(n):\n",
+        "    if n <= 0:\n",
+        "        print(\"Liftover\")\n",
+        "        return n"
+      ],
+      "metadata": {
+        "id": "I6zm8DQZ8MuQ"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def my_future(future):\n",
+        "    if future == \"AI Engineer\":\n",
+        "        print(\"God Did it!\")\n",
+        "    elif future == \"Tech boy\":\n",
+        "        print(\"Keep grinding, God will do it!\")\n",
+        "    else:\n",
+        "        print(\"Na moni ritual 😂\")\n",
+        "\n",
+        "my_future(\"Hmmmmm\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "eO6n721f_CQZ",
+        "outputId": "4f85dcb1-0cb0-41a8-ed9a-7654de8d5c2b"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Na moni ritual 😂\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def fib(n):\n",
+        "    if n <= 1:\n",
+        "        return n\n",
+        "    return fib(n - 1) + fib(n - 2)\n",
+        "\n",
+        "\n",
+        "print(fib(4))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "BbW3h_Cnt6hj",
+        "outputId": "9cdb9478-182c-49ff-a5d7-7ccc07377d58"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "3\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def score_students(score, max_number):\n",
+        "    if max(score) == max_number:\n",
+        "        return True\n",
+        "    el  se:\n",
+        "        return False\n",
+        "\n",
+        "print(score_students([45, 78, 89, 34, 24, 99], 88))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "KB5_OktbXRka",
+        "outputId": "4a3a531c-a47a-47ff-ff92-71e96dc2019c"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "False\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def get_score(score):\n",
+        "    if max(score) >= 70:\n",
+        "        return \"Good Score!\"\n",
+        "    elif max(score) >= 50:\n",
+        "        return \"Fair Score!\"\n",
+        "    else:\n",
+        "        return \"poor Score\"\n",
+        "\n",
+        "print(get_score([45,21, 34, 78, 56, 27]))"
+      ],
+      "metadata": {
+        "id": "XxNmr5tBZUbX",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "65e9a710-7d0a-4743-b5be-05c273fd023b"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Good Score!\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def get_score(score):\n",
+        "    highest = max(score)\n",
+        "    if highest >= 70:\n",
+        "        return \"Good Score!\"\n",
+        "    elif highest >= 50:\n",
+        "        return \"Fair Score!\"\n",
+        "    else:\n",
+        "        return \"poor Score\"\n",
+        "\n",
+        "\n",
+        "print(get_score([45,21, 34, 15, 26, 27]))"
+      ],
+      "metadata": {
+        "id": "C5-e2djVuXJc"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def find_number(num, target):\n",
+        "    low = 0\n",
+        "    high = len(num) -1\n",
+        "\n",
+        "    while low <= high:\n",
+        "        middle = (low + high) // 2\n",
+        "    if num[middle] == target:\n",
+        "        return True\n",
+        "    elif num[middle] < target:\n",
+        "        low = middle + 1\n",
+        "    else:\n",
+        "        high = middle - 1\n",
+        "\n",
+        "    return False\n",
+        "\n",
+        "\n",
+        "\n",
+        "print(find_number([10, 20, 30, 40,50, 60, 70, 80], 50))"
+      ],
+      "metadata": {
+        "id": "fZZ_5nvKOXH8"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def find_"
+      ],
+      "metadata": {
+        "id": "Hln_SnzqQ3GB"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
